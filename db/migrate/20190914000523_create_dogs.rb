@@ -7,5 +7,6 @@ class CreateDogs < ActiveRecord::Migration[5.2] #ActiveRecord version is REQUIRE
   end
 
   def down # drops the table
+    drop_table :dogs
   end
 end
